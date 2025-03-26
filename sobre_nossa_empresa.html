@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - meta tag principal
+  -->
+  <title> Ferreira's - Ração de Alta Qualidade para Pets</title>
+  <meta name="title" content=" Ferreira's - Ração de Alta Qualidade para Pets">
+  <meta name="description" content="Este é um template de eCommerce feito por codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - link para o CSS customizado
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - link para fontes do Google
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload de imagens
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #CABEÇALHO
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="alternar menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">
+        <img src="assets/images/logo ferreiras petshop - Copia.jpg" alt="Ferreira's Petshop" class="logo-img">
+      </a>
+
+      <!-- <a href="#" class="logo">Ferreira's</a> -->
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Início</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sobre_nossa_empresa.html#sobre-nos" class="navbar-link" data-nav-link>Quem Somos</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="serviços.html" class="navbar-link" data-nav-link>Serviços</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="produtos.html" class="navbar-link" data-nav-link>Produtos</a>
+        </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link onclick="redirectToWhatsApp()">Contato</a>
+        </li>
+        
+           
+        </ul>
+
+        
+        
+
+        <a href="#" class="navbar-action-btn">Entrar</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Pesquisar">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn user" aria-label="Usuário">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn" aria-label="carrinho">
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+  <!-- 
+        - #whatsapp-link
+      -->
+
+      <a class="whatsapp-link" href="https://wa.me/5519994230629?text=%20Olá!%20Somos%20da%20Ferreira's%20Petshop!" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Alta Qualidade em </span> Pet Shop
+          </h1>
+
+          <p class="hero-text">Venda com desconto hoje</p>
+
+          <!--<a href="#" class="btn">Compre agora</a>-->
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Principais</span> Categorias
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/magnus_tododia.png" width="330" height="300" loading="lazy" alt="Ração para Gato"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">RAÇÕES</a>
+                </h3>
+                
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/mix_de_sementes_para_calopsita.webp" width="330" height="300" loading="lazy" alt="Brinquedos para Gato"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">SEMENTES E GRÃOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Acessorios_casinha_pet.webp" width="330" height="300" loading="lazy" alt="Ração para Cachorro"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">ACESSÓRIOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/brinquedo_dog_corda.webp" width="330" height="300" loading="lazy" alt="Brinquedos para Cachorro"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">BRINQUEDOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/osso-natural-caes-ribs-barbecue.jpg" width="330" height="300" loading="lazy"
+                    alt="Suplementos para Cachorro" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">PETISCOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <li id="sobre-nos" class="petshop-list-item">
+        <p class="petshop-list-title">Sobre Nós</p>
+        <div class="petshop-card">
+            <h3 class="petshop-card-title"></h3>
+              A Ferreiras Petshop é uma empresa familiar localizada na cidade de Campinas, que se destaca pelo compromisso com o bem-estar dos animais e pelo atendimento personalizado aos seus clientes. 
+            </h3>
+            <p>
+                Situada na Av. Mário Trevenzoli, 1440 - Jardim Planalto de Viracopos, a loja oferece uma ampla gama de produtos e serviços para pets, atendendo às necessidades de cães, gatos e outros animais de estimação.
+            </p>
+            <p>
+              Com um ambiente acolhedor e uma equipe altamente qualificada, 
+              a Ferreiras Petshop se tornou uma referência na região, conquistando a confiança e a fidelidade dos clientes que buscam não só qualidade nos produtos, mas também um atendimento especializado e atencioso.
+            </p>
+
+            <p>
+              A empresa valoriza os laços afetivos entre os tutores e seus animais, oferecendo desde ração e brinquedos até cuidados com a saúde e higiene dos pets.
+            </p>
+             
+            <p>
+              Além disso, a Ferreiras Petshop promove eventos e ações sociais em prol dos animais, contribuindo para a conscientização sobre a importância da adoção responsável e do respeito aos seres vivos.
+            </p>
+
+            <p>
+              A Ferreiras Petshop foi inaugurada no dia 15 de junho de 2024, com o objetivo de proporcionar a melhor experiência para os pets e seus donos. 
+              Seu portfólio inclui itens de alta qualidade e serviços que garantem a satisfação de todos. 
+            </p>
+            <p>
+              Seja para um simples passeio, um banho especial ou a escolha de um presente para o seu pet, a empresa se dedica a oferecer tudo o que é necessário para o conforto e a felicidade dos animais.
+              Com o cuidado e o carinho de uma empresa familiar, a Ferreiras Petshop tem como missão oferecer produtos de confiança e um atendimento que realmente entende as necessidades de cada pet e seus tutores.
+            </p>
+            <p>
+              Venha nos visitar e conheça de perto o nosso trabalho! Estamos sempre prontos para receber você e o seu pet com carinho e dedicação.
+            </p>
+        </div>
+            
+           
+             
+            
+      
+            
+
+
+
+
+
+
+
+
+
+        
+    </li>
+      
+<!-- 
+  - #SERVIÇO
+-->
+
+<section class="section service" aria-label="service">
+  <div class="container">
+
+    <img src="./assets/images/service-image.png" width="122" height="136" loading="lazy" alt="" class="img">
+
+    <h2 class="h2 section-title">
+      <span class="span">O que seu pet precisa,</span> quando ele precisa.
+    </h2>
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="service-card">
+
+          <figure class="card-icon">
+            <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
+              alt="ícone de serviço">
+          </figure>
+
+          <h3 class="h3 card-title">Entrega Gratuita no Mesmo Dia</h3>
+
+          <p class="card-text">
+           
+          </p>
+
+        </div>
+      </li>
+
+      
+        <div class="service-card">
+
+          <figure class="card-icon">
+            <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
+              alt="ícone de serviço">
+          </figure>
+
+          <h3 class="h3 card-title">Pagamento Seguro</h3>
+
+          <p class="card-text">
+           
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="service-card">
+
+          <figure class="card-icon">
+            <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
+              alt="ícone de serviço">
+          </figure>
+
+          <h3 class="h3 card-title">Suporte 24/7</h3>
+
+          <p class="card-text">
+           
+          </p>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+<!-- 
+  - #MARCA
+-->
+
+<section class="section brand" aria-label="brand">
+  <div class="container">
+
+    <h2 class="h2 section-title">
+      <span class="span">Marcas</span> Populares
+    </h2>
+
+    <ul class="has-scrollbar">
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/royal_canin.png" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/specialdog.jpg" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/formula_natral3.png" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/whiskas.jpg" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/adimax magnus.jpg" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+  </main>
+
+
+<!-- 
+  - #RODAPÉ
+-->
+
+<!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Ferreira's</a> 
+
+          <p class="footer-text">
+            Se você tiver alguma dúvida, entre em contato conosco pelo e-mail <a href="Ferreiraspetshop@outlook.com"
+              class="link">Ferreiraspetshop@outlook.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+               Av. Mário Trevenzoli, 1440 - Jardim Planalto de Viracopos, Campinas - SP, 13056-050
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:(19)9942-30629" class="contact-link">(19)9942-30629</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <!-- <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li> --> 
+
+            <li>
+              <a href="https://www.instagram.com/ferreiraspetshop" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporativo</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Carreiras</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre nós</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contato</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Perguntas Frequentes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendedores</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Programa de Afiliados</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Informações</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Loja Online</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de Privacidade</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de Devolução</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de Envio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Termos de Serviço</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Rastrear Pedido</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Toalete</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Treinamento Positivo de Cães</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Serviços Veterinários</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Seguro Petco</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Adoção de Pets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Centro de Recursos</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 Feito por <a href="#" class="copyright-link">Projeto Integrador Danilo, Bernardo e Rafael </a>
+        </p>
+
+        <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="método de pagamento" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+<!-- 
+  - #VOLTAR AO TOPO
+-->
+
+<a href="#top" class="back-top-btn" aria-label="voltar ao topo" data-back-top-btn>
+  <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+</a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <script>// Carrinho de compras  produtos no carrinho
+document.addEventListener("DOMContentLoaded", function () {
+    atualizarCarrinho();
+});
+
+function atualizarCarrinho() {
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    const listaCarrinho = document.querySelector(".itens-carrinho");
+    const totalPreco = document.querySelector("#total-preco");
+
+    if (!listaCarrinho) {
+        console.error("Elemento .itens-carrinho não encontrado.");
+        return;
+    }
+
+    listaCarrinho.innerHTML = "";
+
+    if (carrinho.length === 0) {
+        listaCarrinho.innerHTML = "<p>O carrinho está vazio.</p>";
+        totalPreco.textContent = "$0.00";
+        return;
+    }
+
+    let total = 0;
+    carrinho.forEach((item, index) => {
+        total += parseFloat(item.preco.replace("$", "")) * item.quantidade;
+
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <div class="cart-item">
+                <span>${item.nome}</span>
+                <span>${item.preco} (x${item.quantidade})</span>
+                <button class='remover-item' data-index='${index}'>Remover</button>
+            </div>
+        `;
+        listaCarrinho.appendChild(li);
+    });
+
+    totalPreco.textContent = `$${total.toFixed(2)}`;
+
+    document.querySelectorAll(".remover-item").forEach(botao => {
+        botao.addEventListener("click", function () {
+            removerDoCarrinho(this.getAttribute("data-index"));
+        });
+    });
+}
+
+function removerDoCarrinho(index) {
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    if (carrinho[index].quantidade > 1) {
+        carrinho[index].quantidade--;
+    } else {
+        carrinho.splice(index, 1);
+    }
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizarCarrinho();
+}
+
+// Simular um processo de compra ao clicar no botão "Finalizar Compra"
+document.querySelector("#finalizar-compra")?.addEventListener("click", function () {
+    alert("Compra finalizada com sucesso!");
+    localStorage.removeItem("carrinho");
+    atualizarCarrinho();
+});
+
+    </script>
+
+
+<script>
+  function redirectToWhatsApp() {
+      window.location.href = "https://wa.me/5519994230629?text=%20Olá!%20Somos%20da%20Ferreira's%20Petshop!";
+  }
+</script>
+    
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

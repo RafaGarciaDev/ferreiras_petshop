@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - meta tag principal
+  -->
+  <title> Ferreira's - Ração de Alta Qualidade para Pets</title>
+  <meta name="title" content=" Ferreira's - Ração de Alta Qualidade para Pets">
+  <meta name="description" content="Este é um template de eCommerce em HTML feito por codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - link para o CSS personalizado
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Adicione o CSS do Swiper -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+
+  <!-- 
+    - link para fontes do Google
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - pré-carregamento de imagens
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+ 
+
+  <!-- 
+    - #CABEÇALHO
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="alternar menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">
+        <img src="assets/images/logo ferreiras petshop - Copia.jpg" alt="Ferreira's Petshop" class="logo-img">
+      </a>
+
+      <!-- <a href="#" class="logo">Ferreira's</a> -->
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Início</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sobre_nossa_empresa.html#sobre-nos" class="navbar-link" data-nav-link>Quem Somos</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="serviços.html" class="navbar-link" data-nav-link>Serviços</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="produtos.html" class="navbar-link" data-nav-link>Produtos</a>
+        </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link onclick="redirectToWhatsApp()">Contato</a>
+        </li>
+        
+           
+        </ul>
+
+        
+        
+
+        <a href="#" class="navbar-action-btn">Entrar</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Pesquisar">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn user" aria-label="Usuário">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn" aria-label="carrinho">
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- 
+        - #whatsapp-link
+      -->
+
+  <a class="whatsapp-link" href="https://wa.me/5519994230629?text=%20Olá!%20Somos%20da%20Ferreira's%20Petshop!" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Alta Qualidade em </span> Pet Shop
+          </h1>
+
+          <p class="hero-text">Venda com desconto hoje</p>
+
+          <a href="#" class="btn">Compre agora</a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CATEGORIAS
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Principais</span> Categorias
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/magnus_tododia.png" width="330" height="300" loading="lazy" alt="Ração para Gato"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="produtos.html" class="card-title">RAÇÕES</a>
+                </h3>
+                
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/mix_de_sementes_para_calopsita.webp" width="330" height="300" loading="lazy" alt="Brinquedos para Gato"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="produtos.html"class="card-title">SEMENTES E GRÃOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/Acessorios_casinha_pet.webp" width="330" height="300" loading="lazy" alt="Ração para Cães"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="produtos.html" class="card-title">ACESSÓRIOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/brinquedo_dog_corda.webp" width="330" height="300" loading="lazy" alt="Brinquedos para Cães"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="produtos.html" class="card-title">BRINQUEDOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/osso-natural-caes-ribs-barbecue.jpg" width="330" height="300" loading="lazy"
+                    alt="Suplementos para Cães" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="produtos.html" class="card-title">PETISCOS</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+<!-- 
+  - #OFERTAS
+-->
+
+<section class="section offer" aria-label="offer">
+  <div class="container">
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="offer-card has-bg-image img-holder"
+          style="background-image: url('./assets/images/offer-banner-1.jpg'); --width: 540; --height: 374;">
+
+          <p class="card-subtitle">Itens Selecionados. Somente Online.</p>
+
+          <h3 class="h3 card-title">
+            Ofertas de Verão <span class="span">Quentes</span>
+          </h3>
+
+          <a href="#" class="btn">Leia Mais</a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="offer-card has-bg-image img-holder"
+          style="background-image: url('./assets/images/offer-banner-2.jpg'); --width: 540; --height: 374;">
+
+          <p class="card-subtitle">Petiscos & Cuidados</p>
+
+          <h3 class="h3 card-title">
+            Mime o seu verdadeiro <span class="span">amor</span>
+          </h3>
+
+          <a href="#" class="btn">Leia Mais</a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="offer-card has-bg-image img-holder"
+          style="background-image: url('./assets/images/offer-banner-3.jpg'); --width: 540; --height: 374;">
+
+          <p class="card-subtitle">Nossa Marca que Você Vai Amar</p>
+
+          <h3 class="h3 card-title">
+            Novidades deste <span class="span">ano</span>
+          </h3>
+
+          <a href="#" class="btn">Leia Mais</a>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+<!-- 
+  - #PRODUTOS
+-->
+
+<section class="section product" id="shop" aria-label="product">
+  <div class="container">
+    <h2 class="h2 section-title">
+      <span class="span">Mais</span> Vendidos
+    </h2>
+
+    <div class="swiper product-swiper">
+      <div class="swiper-wrapper">
+        <!-- Produto 1 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="1" data-product-id="1">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/alimento-zootekna-canario 1 .webp" width="360" height="360" loading="lazy"
+                alt="Mistura Balanceada Zootekna" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/alimento-zootekna-canario 1.2 .webp" width="360" height="360" loading="lazy"
+                alt="Mistura Balanceada Zootekna" class="img-cover hover">
+
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+              
+              <h3 class="h3">
+                <a href="#" class="card-title">Mistura Balanceada Zootekna de Sementes Papagaio</a>
+                ou
+                <a href="#" class="card-title">Mistura Balanceada Sementes Canário Zootekna</a>
+              </h3>
+  
+              <data class="card-price" value="7.50">R$7.50</data>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="17" data-product-id="17">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/keldog-Carne1.2.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/Keldog-Carneiro1.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Sache-Caes-Keldog-Carneiro </a>
+                ou 
+                <a href="#" class="card-title">Sache-Caes-keldog-Carne </a>
+              </h3>
+  
+              <data class="card-price" value="37.50">R$37.50</data>
+  
+            </div>
+  
+          </div>
+        </div>
+        
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="11" data-product-id="11">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/comedouro-paris-furacaopet-n4-1900-ml-rosa-33750_21483.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/comedouro-pequeno-n-03-furacao-pet-ref-208-12159_19313.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+  
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+  
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Comedouro-pequeno-n-03-furacao-pet</a>
+                ou 
+                <a href="#" class="card-title"> Comedouro-paris-furacaopet-n4 </a>
+              </h3>
+  
+              <data class="card-price" value="35.00">R$35.00</data>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="3" data-product-id="3">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/antipulgas-e-carrapatos-msd-bravecto-para-caes-de-10-a-20-kg-500mg-17204_2687.webp" width="360" height="360" loading="lazy"
+                alt="Morbi vel arcu scelerisque" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/antipulgas-e-carrapatos-msd-bravecto-para-caes-de-45-a-10-kg-250mg-17205_2697.webp" width="360" height="360" loading="lazy"
+                alt="Morbi vel arcu scelerisque" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Antipulgas-e-carrapatos-bravecto 4 a 10 kg </a>
+                ou 
+                <a href="#" class="card-title">Antipulgas-e-carrapatos-bravecto 10 a 20 kg </a>
+              </h3>
+  
+              <data class="card-price" value="122.50">R$122.50</data>
+            </div>
+          </div>
+
+        </div>
+        
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="6" data-product-id="6">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/sabonete-antisseptico-e-bactericida-matacura1.2.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/sabonete-matacura-sarnicida1.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Sabonete-antisseptico-e-bactericida</a>
+                ou 
+                <a href="#" class="card-title">Sabonete-sarnicida -matacura</a>
+              </h3>
+  
+              <data class="card-price" value="15.50">R$15.50</data>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="19" data-product-id="19">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/sistema-de-terapia-real-h-homeo-pet-displasia-30ml-1.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/sistema-de-terapia-real-h-homeo-pet-trauma-30ml-1.2.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Sistema de Terapia Trauma  para Cães e Gatos</a>
+                ou
+                <a href="#" class="card-title">Sistema de Terapia  Displasia para Cães e Gatos</a>
+              </h3>
+  
+              <data class="card-price" value="105.99">R$105.99</data>
+  
+            </div>
+  
+          </div>
+        </div>
+
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="5" data-product-id="5">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/antipulgas-e-carrapatos-spectra. 1 . 2.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/antipulgas-e-carrapatos-spectra. 1 .webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Antipulgas-e-carrapatos-spectra 3 a 7 Kg </a>
+                ou 
+                <a href="#" class="card-title"> antipulgas-e-carrapatos-spectra 7 a 15 kg </a>
+              </h3>
+  
+              <data class="card-price" value="125.50">R$125.50</data>
+  
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="13" data-product-id="13">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/desinfetante-agener-uniao1.2.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/desinfetante-agener-uniao1.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Hysteril Desinfetante e Eliminador de Odores Agener </a>
+                ou 
+                <a href="#" class="card-title">Ultra Desinfetante Procão Citronela  1 Lt</a>
+              </h3>
+  
+              <data class="card-price" value="80.99">R$80.99</data>
+  
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="16" data-product-id="16">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/Racao-Premier-Formula-Caes-Adultos-Racas-Medias-Sabor-Frango-15kg-frente 1.2.png" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/Racao-Premier-Formula-Caes-Adultos-Racas-Medias-Sabor-Frango-15kg-frente 1.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Racao-Premier-Formula-Caes-Adultos 15 kg </a>
+                ou 
+                <a href="#" class="card-title">Ração Premier raças grandes e gigantes 15 kg </a>
+              </h3>
+  
+              <data class="card-price" value="15">R$255.00</data>
+  
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="18" data-product-id="18">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/tigela-chalesco-de-inox-tamanho-1-7490_18974.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/tigela-comedouro-alum-medio-ref-111-2559_15800.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Comedouro Alum.medio   </a>
+                ou 
+                <a href="#" class="card-title">Comedouro Alum.grande  </a>
+              </h3>
+  
+              <data class="card-price" value="22.00">R$22.00</data>
+  
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="20" data-product-id="20">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/Pet-delicia-panelinha-de-carne-caes1.2.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/Pet-delicia-risotinho-pet-delicia1.webp" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Ração Úmida Pet Delícia Frango   </a>
+                ou
+                <a href="#" class="card-title">Ração Úmida Pet Delícia Carne  </a>
+              </h3>
+  
+              <data class="card-price" value="40.00">R$40.00</data>
+  
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="22" data-product-id="22">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/Shampoo Hydra Groomers Pro Neutro para Cães e Gatos 1.2 .jpg" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/Shampoo Hydra Groomers Pro Neutro para Cães e Gatos 1.jpg" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Shampoo HYDRA PRO Neutro </a>
+                ou 
+                <a href="#" class="card-title">Condicionador HYDRA PRO Brilho e Desembaraço </a>
+              </h3>
+  
+              <data class="card-price" value="315.00">R$315.00</data>
+  
+            </div>
+            
+          </div>
+        </div>
+
+
+        <!-- Produto 6 -->
+        <div class="swiper-slide">
+          <div class="product-card" data-id="24" data-product-id="24">
+            <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+              <img src="./assets/images/Pagprodutos/Sache-Caes-Adultos-Racas-Pequenas-Cordeiro-ao-Molho1.2.png" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover default">
+              <img src="./assets/images/Pagprodutos/Sache-Caes-Adultos-Racas-Pequenas-Cordeiro-ao-Molho1.png" width="360" height="360" loading="lazy"
+                alt="Commodo leo sed porta" class="img-cover hover">
+  
+              <button class="card-action-btn" aria-label="adicionar ao carrinho" title="Adicionar ao Carrinho">
+                <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="card-content">
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">(1)</span>
+              </div>
+  
+              <h3 class="h3">
+                <a href="#" class="card-title">Sache-Caes-Adultos-Racas-Pequenas-Cordeiro-ao-Molho </a>
+                ou 
+                <a href="#" class="card-title">Sache-Caes-Adultos-Racas-Pequenas-Carne-ao-Molho </a>
+              </h3>
+  
+              <data class="card-price" value="9.90">R$9.90</data>
+  
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+        <!-- Continue com os outros produtos seguindo o mesmo padrão -->
+        <!-- Certifique-se de que cada produto esteja dentro de um único .swiper-slide -->
+        <!-- E que dentro de cada .swiper-slide haja apenas um .product-card -->
+        
+      </div>
+      
+      <!-- Adicione paginação e navegação se necessário -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <img src="./assets/images/service-image.png" width="122" height="136" loading="lazy" alt="" class="img">
+
+          <h2 class="h2 section-title">
+            <span class="span">O que seu pet precisa,</span> quando ele precisa.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
+                    alt="ícone de serviço">
+                </figure>
+
+                <h3 class="h3 card-title">Entrega Grátis no Mesmo Dia</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+          
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
+                    alt="ícone de serviço">
+                </figure>
+
+                <h3 class="h3 card-title">Pagamento Seguro</h3>
+
+                <p class="card-text">
+                 
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
+                    alt="ícone de serviço">
+                </figure>
+
+                <h3 class="h3 card-title">Suporte 24/7</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+<!-- 
+  - #MARCA
+-->
+
+<section class="section brand" aria-label="brand">
+  <div class="container">
+
+    <h2 class="h2 section-title">
+      <span class="span">Marcas</span> Populares
+    </h2>
+
+    <ul class="has-scrollbar">
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/royal_canin.png" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/specialdog.jpg" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/formula_natral3.png" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/whiskas.jpg" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+      <li class="scrollbar-item">
+        <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+          <img src="./assets/images/adimax magnus.jpg" width="150" height="150" loading="lazy" alt="logo da marca"
+            class="img-cover">
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+  </main>
+
+<!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Ferreira's</a> 
+
+          <p class="footer-text">
+            Se você tiver alguma dúvida, entre em contato conosco pelo e-mail <a href="Ferreiraspetshop@outlook.com"
+              class="link">Ferreiraspetshop@outlook.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+               Av. Mário Trevenzoli, 1440 - Jardim Planalto de Viracopos, Campinas - SP, 13056-050
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:(19)9942-30629" class="contact-link">(19)9942-30629</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <!-- <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li> --> 
+
+            <li>
+              <a href="https://www.instagram.com/ferreiraspetshop" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporativo</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Carreiras</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre nós</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contato</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Perguntas Frequentes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendedores</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Programa de Afiliados</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Informações</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Loja Online</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de Privacidade</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de Devolução</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de Envio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Termos de Serviço</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Rastrear Pedido</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Toalete</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Treinamento Positivo de Cães</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Serviços Veterinários</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Seguro Petco</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Adoção de Pets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Centro de Recursos</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 Feito por <a href="#" class="copyright-link">Projeto Integrador Danilo, Bernardo e Rafael </a>
+        </p>
+
+        <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="método de pagamento" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+
+<!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="voltar ao topo" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script_carrinho.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/server.js" defer></script>
+  <script src="./assets/js/pesquisa.js" defer></script>
+
+  <!-- <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchBtn = document.querySelector('.search-btn');
+    const searchInput = document.getElementById('searchInput');
+    const searchContainer = document.querySelector('.search-container');
+  
+    // Mostrar/ocultar campo de pesquisa ao clicar no botão
+    if (searchBtn) {
+      searchBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (searchContainer) searchContainer.classList.toggle('active'); // Mostra ou esconde o container de pesquisa
+        if (searchInput) {
+          searchInput.classList.toggle('active');
+          if (searchInput.classList.contains('active')) {
+            searchInput.focus(); // Coloca o foco no campo
+          } else {
+            searchInput.value = ''; // Limpa o campo quando desativado
+          }
+        }
+      });
+    }
+  
+    // Fecha o campo de pesquisa ao clicar fora dele
+    document.addEventListener('click', (e) => {
+      if (searchContainer && !searchContainer.contains(e.target)) {
+        searchContainer.classList.remove('active');
+        if (searchInput) searchInput.classList.remove('active');
+      }
+    });
+  });
+
+
+</script> -->
+
+ 
+ 
+ <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Adicione o JS do Swiper no final do body -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
